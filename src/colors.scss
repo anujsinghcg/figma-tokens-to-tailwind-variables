@@ -1,0 +1,28 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #1d4ed8; /* blue-700 */
+  --color-primary-light: #3b82f6; /* blue-500 */
+  --color-primary-dark: #1e40af; /* blue-800 */
+
+  /* Secondary Colors */
+  --color-secondary: #f59e0b; /* amber-500 */
+  --color-secondary-light: #fbbf24; /* amber-400 */
+  --color-secondary-dark: #d97706; /* amber-600 */
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #f3f4f6; /* gray-100 */
+  --color-gray: #9ca3af; /* gray-400 */
+  --color-gray-dark: #4b5563; /* gray-600 */
+
+  /* Accent Colors */
+  --color-accent: #10b981; /* emerald-500 */
+  --color-accent-light: #34d399; /* emerald-400 */
+  --color-accent-dark: #059669; /* emerald-600 */
+
+  /* Error / Success / Warning */
+  --color-error: #ef4444; /* red-500 */
+  --color-success: #22c55e; /* green-500 */
+  --color-warning: #facc15; /* yellow-400 */
+}

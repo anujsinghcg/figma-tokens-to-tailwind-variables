@@ -1,0 +1,137 @@
+.page-background {
+  // background-color: #f0f0f0;
+  // min-height: 100vh;
+  // padding: 32px;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+ 
+}
+
+.half-width {
+  flex: 1;
+}
+.half-width-phn{width: 48.5%;}
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.checkbox-group {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.card-section {
+  margin: 24px 0;
+  padding: 16px;
+}
+
+.mat-input-element {
+    height: 20px;
+    width: 200px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 18px;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: 1px solid #b4b4b4;;
+}
+
+// .text-group .label {
+//   font-weight: bold;
+// }
+
+.text-group .subtext {
+  font-size: 0.9em;
+  color: gray;
+}
+
+// .card{
+//     background: white;
+// }
+
+.heading{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.personal-info-sec{
+    padding: 24px;
+}
+.custom-date-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Right align */
+  margin-top: 16px;
+
+}
+
+.custom-label {
+  font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 240px;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  border: none !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+}
+
+::ng-deep .mat-input-element {
+  font-size: 16px !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+::ng-deep .mat-form-field-label {
+  transform: translateY(-1.6em) scale(0.75) !important;
+  background-color: white !important;
+  padding: 0 4px;
+  z-index: 1;
+}
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline{
+  background: white;
+    z-index: 0 !important;
+}
+::ng-deep .custom-date-picker .mdc-text-field--outlined .mdc-notched-outline{
+  height: 45px;
+}
+::ng-deep .custom-date-picker .mat-mdc-form-field-infix{
+  margin-top: -5px;
+}
+.page-background:first-child .mat-mdc-slide-toggle{  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+    
+    

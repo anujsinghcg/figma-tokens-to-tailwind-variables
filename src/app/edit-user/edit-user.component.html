@@ -1,0 +1,149 @@
+<div class=" page-background bg-[var(--colors-light-grey)] text-[var(--colors-dark-white)] dark:bg-[var(--colors-dark-grey)] dark:text-[var(--colors-dark-blacktext)] "> 
+  <p><mat-slide-toggle (click)="toggleTheme()"><span class=" text-[var(--colors-light-subtext)] bg-background dark:text-[var(--colors-dark-subtext)]">Change Mode</span></mat-slide-toggle></p> 
+  <div class="form-container">
+    <div class="heading">
+    <h1 class="text-[var(--colors-light-blacktext)] dark:text-[var(--colors-dark-blacktext)]" style="font-size: var(--font-xl)" >Add A User</h1>
+    <p class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">The court - session 1</p>
+    </div>
+    <form>
+<div class="custom-date-picker">
+  <label class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Subscription Date</label>
+  <mat-form-field appearance="outline" class="theme">
+    <input matInput [matDatepicker]="picker" class="custom-input" [value]="selectedDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div> 
+</form>
+    <form>
+      
+        <div class=" personal-info-sec bg-[var(--colors-light-white)] text-[var(--colors-dark-white)] dark:bg-[var(--colors-dark-white)] dark:text-[var(--colors-dark-blacktext)] border border--colors-light-border" >
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="half-width theme" >
+          <mat-label style="top: 0;">First Name</mat-label>
+          <input required matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="half-width theme">
+          <mat-label>Last Name</mat-label>
+          <input required matInput>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="half-width theme">
+          <mat-label>Email</mat-label>
+          <input required matInput type="email">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="half-width theme">
+          <mat-label>Job Title</mat-label>
+          <input required matInput>
+        </mat-form-field>
+      </div>
+    <div class="form-row half-width-phn">
+        <mat-form-field appearance="fill" class="half-width theme">
+          <mat-label>Phone</mat-label>
+          <input required matInput type="email">
+        </mat-form-field>
+      </div>
+     
+
+      <div class="checkbox-group">
+        <h2 class="text-[var(--colors-light-blacktext)]  dark:text-[var(--colors-dark-blacktext)]">Optional Settings</h2>
+        <mat-checkbox ><span class="text-[var(--colors-light-subtext)]  dark:text-[var(--colors-dark-subtext)]">Enable Notifications</span></mat-checkbox>
+        <mat-checkbox ><span class="text-[var(--colors-light-subtext)]  dark:text-[var(--colors-dark-subtext)]">Subscribe to Newsletter</span></mat-checkbox>
+      </div>
+      </div>
+      <div class="card-section bg-[var(--colors-light-white)] card dark:bg-[var(--colors-dark-white)] dark:text-[var(--colors-dark-blacktext)] border border--colors-light-border" >
+        <h2 class="text-[var(--colors-light-blacktext)] dark:text-[var(--colors-dark-blacktext)]" >Department Access</h2>
+       <div class="grid grid-cols-3 gap-4">
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">All</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Construction Services</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Costume</span>
+  </mat-checkbox>
+        <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Design Studio</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Facilities Maintenance</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Fire & Security</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">First Aid</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Food Services</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Mail Services</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Metal Shop</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Motion Picture Imaging</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Office & Production</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Parking</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Photo Lab</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Post Production Sound</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Property</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Special Events</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Staff Shop</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Studio Operations</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Transportation</span>
+  </mat-checkbox>
+  <mat-checkbox>
+    <span class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Utilities Services</span>
+  </mat-checkbox>
+</div>
+      </div>
+
+      <div class="card-section card bg-[var(--colors-light-white)] dark:bg-[var(--colors-dark-white)] dark:text-[var(--colors-dark-blacktext)] border border--colors-light-border">
+        <h2 class="text-[var(--colors-light-blacktext)] bg-background dark:text-[var(--colors-dark-blacktext)]" >Sections & Permissions</h2>
+        <div class="section dark:bg-[var((--colors-dark-white))] dark:text-[var(--colors-dark-blacktext)] " >
+          <div class="text-group">
+            <div class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Project</div>
+            <div class="subtext ">Can View</div>
+          </div>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+         <div class="section dark:bg-[var((--colors-dark-white))] dark:text-[var(--colors-dark-blacktext)]">
+          <div class="text-group">
+            <div class="text-[var(--colors-light-subtext)] dark:text-[var(--colors-dark-subtext)]">Service Request</div>
+            <div class="subtext">Receive emails about your account security.</div>
+          </div>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+      </div>
+   
+    </form>
+  </div>
+</div>
+
+

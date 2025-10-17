@@ -1,0 +1,162 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(./styles/design-tokens.css);
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mdc-notched-outline__notch {
+    border-style: none;
+}
+
+.mat-mdc-icon-button {
+    line-height: normal;
+}
+
+// :root {
+//   --background: #ffffff;
+//   --foreground: #0a0a0a;
+//   --border: #e5e5e5;
+//   --secondary: #f5f5f5;
+//   --muted-foreground: #737373;
+//   --muted: #f5f5f5;
+//   --background-color: #000000;
+//   --primary: #171717;
+//   --secondary-foreground: #0a0a0a;
+//   --accent-foreground: #171717;
+//   --accent: #f5f5f5;
+//   --ring: #737373;
+//   --card: #ffffff;
+//   --card-foreground: #0a0a0a;
+//   --popover: #ffffff;
+//   --popover-foreground: #0a0a0a;
+//   --primary-foreground: #fafafa;
+//   --input: #e5e5e5;
+//   --sidebar: #fafafa;
+//   --sidebar-foreground: #0a0a0a;
+//   --sidebar-primary: #171717;
+//   --sidebar-primary-foreground: #fafafa;
+//   --sidebar-accent-foreground: #171717;
+//   --sidebar-ring: #737373;
+  
+// }
+
+// [data-theme="dark"] {
+//   --background: #0a0a0a;
+//   --foreground: #fafafa;
+//   --border: #404040;
+//   --secondary: #262626;
+//   --muted-foreground: #a3a3a3;
+//   --muted: #262626;
+//   --background-color: #000000;
+//   --primary: #e5e5e5;
+//   --secondary-foreground: #fafafa;
+//   --accent-foreground: #fafafa;
+//   --accent: #404040;
+//   --ring: #737373;
+//   --card: #171717;
+//   --card-foreground: #fafafa;
+//   --popover: #262626;
+//   --popover-foreground: #fafafa;
+//   --primary-foreground: #171717;
+//   --input: #171717;
+//   --sidebar: #171717;
+//   --sidebar-foreground: #fafafa;
+//   --sidebar-primary: #0588f0;
+//   --sidebar-primary-foreground: #fafafa;
+//   --sidebar-accent-foreground: #fafafa;
+//   --sidebar-ring: #737373;
+// }
+:root {
+  --background-color: #fc6;
+  --text-color: rgb(128, 0, 0);
+  --primary-color: #549a00;
+}
+ 
+.dark {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --primary-color: #1c3d5a;
+}
+// .theme {
+//   &.dark {
+//  .mdc-text-field--filled:not(.mdc-text-field--disabled){
+//   background-color: var(--colors-dark-white);
+//   color:var(--colors-dark-subtext);
+//   }
+//   }
+//   .mdc-text-field--filled:not(.mdc-text-field--disabled){
+//   background-color: var(--colors-light-white);
+//   color:var(--colors-dark-subtext);
+//       border: 1px solid #e5e7eb;
+//   }
+// }
+
+// .theme {
+//   // Light mode styles
+//   .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//     background-color: var(--colors-light-white);
+//     color: var(--colors-dark-subtext);
+//     border: 1px solid #e5e7eb;
+//   }
+
+//   &.dark {
+//     // Dark mode styles for all children
+//     .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//       background-color: var(--colors-dark-white);
+//       color: var(--colors-dark-subtext);
+//       border: 1px solid var(--colors-dark-border);
+//     }
+//   }
+// }
+::ng-deep .mat-form-field-underline {
+  height: 0 !important;
+  border-bottom: none !important;
+  display: none !important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+}
+
+
+.theme {
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: var(--colors-light-white);
+    color: var(--colors-dark-subtext);
+    border: 1px solid #e5e7eb;
+        border-radius: 5px;
+  }
+}
+
+// Apply dark styles to all .theme children inside a .dark parent
+.dark .theme .mdc-text-field--filled:not(.mdc-text-field--disabled),.dark .custom-date-picker .theme .mdc-text-field--outlined .mat-mdc-form-field-flex .mdc-notched-outline {
+  background-color: var(--colors-dark-white);
+  color: var(--colors-dark-subtext);
+  border: 1px solid var(--colors-dark-border);
+}
+.custom-date-picker .theme .mdc-text-field--outlined .mat-mdc-form-field-flex .mat-mdc-form-field-infix .mat-mdc-input-element {
+  color:var(colors-light-muted-grey);
+  border: 1px solid var(--colors-dark-border);
+}
+.dark .custom-date-picker .theme .mdc-text-field--outlined .mat-mdc-form-field-flex .mat-mdc-form-field-infix .mat-mdc-input-element {
+  color: var(--colors-dark-subtext);
+  border: 1px solid var(--colors-dark-border);
+}
+.dark .theme .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input{
+ 
+  color: var(--colors-dark-subtext);
+ 
+}
+.personal-info-sec .mat-mdc-form-field-flex{
+  height: 42px;
+}
+.personal-info-sec .mat-mdc-form-field-infix{
+ padding-top: 12px;
+}
+.personal-info-sec  .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+    top: calc(var(--mat-form-field-container-height, 56px) / 3);
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+  border: none;
+}

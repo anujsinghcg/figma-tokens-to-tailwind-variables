@@ -1,0 +1,21 @@
+:root {
+  --colors-light-white: #ffffff;
+  --colors-light-blacktext: #5009f5;
+  --colors-light-grey: #e4e4e4;
+  --colors-light-muted-grey: #737373;
+  --colors-light-stroke: #e7e7e7;
+  --colors-light-subtext: #02c708;
+  --colors-light-border: #b4b4b4;
+  --colors-dark-white: #1d1d1d;
+  --colors-dark-blacktext: #5009f5;
+  --colors-dark-grey: #000000;
+  --colors-dark-muted-grey: #cacaca;
+  --colors-dark-stroke: #e7e7e7;
+  --colors-dark-subtext: #02c708;
+  --colors-dark-border: #b4b4b4;
+  --font-xs: 12px;
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 20px;
+  --font-xl: 40px;
+}
